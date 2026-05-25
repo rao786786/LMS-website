@@ -15,7 +15,7 @@ const seedAdmin = async () => {
 
     if (existingAdmin) {
       console.log('Admin already exists');
-      process.exit();
+      return; // ❗ STOP ONLY FUNCTION, NOT SERVER
     }
 
     const hashedPassword = await bcrypt.hash('Admin@12345', 10);
@@ -33,10 +33,8 @@ const seedAdmin = async () => {
     console.log('Email: admin@lms.com');
     console.log('Password: Admin@12345');
 
-    process.exit();
   } catch (error) {
     console.log(error);
-    process.exit(1);
   }
 };
 
