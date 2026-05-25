@@ -85,12 +85,3 @@ VITE_API_URL=http://localhost:5000/api
 - POST `/api/enrollments`
 - GET `/api/enrollments/my-courses`
 
-## Screenshots to include in submission
-- Home page
-- Course listing page
-- Course detail page
-- Login page
-- Register page
-- Student dashboard
-- Instructor dashboard
-- Admin dashboard
